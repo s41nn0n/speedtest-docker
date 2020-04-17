@@ -7,6 +7,6 @@ This is a docker build file to host the [speedtest](https://www.speedtest.net/ap
 ```
 git clone https://github.com/team142/speedtest-docker.git
 cd speedtest-docker
-docker build -t speedtest/speedtestcli:latest ./Dockerfile
+docker build -t speedtest/speedtestcli:latest -f ./Dockerfile .
 docker run speedtestcli:latest speedtest -p no
 ```
